@@ -1,16 +1,15 @@
-# s4ros/scalpel
-
-In courtesy of https://github.com/sleuthkit/scalpel
+This is unofficial fork.
 
 ## Docker
 
 ### Run the container
 
 ```sh
+docker build -t scalpel .
 docker run --rm -it \
   -v $(pwd)/device.img:/scalpel/device.img \
   -v $(pwd)/recovery:/scalpel/recovery \
-  s4ros/scalpel
+  scalpel
 ```
 
 #### Volumes description

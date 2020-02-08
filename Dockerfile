@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
 
-# ADD https://github.com/sleuthkit/scalpel/archive/master.zip /
-
 RUN apt-get update && \
   apt-get install -y -qq --no-install-recommends \
       automake \
