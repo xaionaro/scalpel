@@ -19,8 +19,8 @@ There are two docker volumes that you need to mount to recover any files from th
 * `/scalpel/device.img` - this has to be the image file of the device you want to recovery data from
 * `/recovery` - this is the place where any recovered files will be written
 
-##
-
+Adapted version of the original `README`:
+```
 ********************************************************************
 
 As of 6/27/2013 Scalpel has been released under the Apache 2.0 License
@@ -92,6 +92,7 @@ that our compilation environment for Windows is currently 32-bit; we
 haven't tested on the 64-bit version of mingw, but will address this
 int the future.
 
+
 COMPILE INSTRUCTIONS ON SUPPORTED PLATFORMS:
 
 Linux/Mac OS X:
@@ -100,7 +101,6 @@ Linux/Mac OS X:
 % make
 
 Windows (mingw):
-cd src
 mingw32-make -f Makefile.win
 
 
@@ -151,3 +151,4 @@ distributed with tre-0.7.5, which is licensed under the LGPL.
 Cheers,
 
 --Golden and Vico.
+```
