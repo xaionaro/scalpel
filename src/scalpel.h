@@ -142,6 +142,8 @@ int getopt (int argc, char *const argv[], const char *optstring);
 #define MAX_FILE_TYPES                100
 #define MAX_MATCHES_PER_BUFFER        (SIZE_OF_BUFFER / 10)	// BUG: MUST ERROR OUT PROPERLY ON OVERFLOW (check)
 
+#define REPORT_TIMEOUT               3600
+
 // Length of the queues used to tranfer data / results blocks to workers.
 #define QUEUELEN 20
 

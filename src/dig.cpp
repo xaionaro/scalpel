@@ -1279,7 +1279,14 @@ int carveImageFile(struct scalpelState *state) {
 
     // build carvelists before 2nd pass over image file
 
+    time_t prev_report_at = time(NULL);
+
     for(needlenum = 0; needlenum < state->specLines; needlenum++) {
+        time_t now = time(NULL);
+        if (now - prev_report_at > REPORT_TIMEOUT) {
+            fprintf(stdout, "Building carvelists... (%i/%i)\n", needlenum, state->specLines);
+            prev_report_at = now;
+        }
 
         currentneedle = &(state->SearchSpec[needlenum]);
 
